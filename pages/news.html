@@ -57,10 +57,10 @@
         <button data-news-filter="opportunities" data-i18n="news.filter.opportunities">Opportunities</button>
       </div>
 
-      <!-- News cards are loaded dynamically from Google Sheets by news-loader.js -->
+      <!-- News cards are rendered by news-loader.js: from the Google Sheet when
+           SHEET_CSV_URL is configured, otherwise from its BUILTIN_ITEMS list.
+           See NEWS-SETUP-GUIDE.md for the Google Sheet walkthrough. -->
       <div class="grid cols-3" data-news-container></div>
-
-      <div class="note mt-4">ข่าวทั้งหมดดึงมาจาก Google Sheet ที่คุณเชื่อมไว้ในไฟล์ <code>assets/js/news-loader.js</code> — เพิ่มแถวใหม่ในชีต รีโหลดหน้านี้ ข่าวจะขึ้นทันที (ดูคู่มือใน <code>NEWS-SETUP-GUIDE.md</code>)</div>
     </div>
   </section>
 

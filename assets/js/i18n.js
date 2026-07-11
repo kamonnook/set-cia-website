@@ -154,7 +154,6 @@ window.SETCIA_I18N = {
     "impact.crumb": "Impact",
     "impact.title": "Impact & Infographics",
     "impact.lead": "Data-driven snapshots of our international work — partnerships, student mobility, scholarships, and events. Each one is built from real material and updated as new figures come in.",
-    "impact.intro": "New infographics are produced from files dropped into the Infographic Inbox — just ask the Claude assistant to \"make an infographic from the inbox\".",
     "impact.download": "Download SVG",
     "impact.ig1.title": "SET International — At a Glance",
     "impact.ig1.desc": "A one-page overview of partners, exchange students, countries, and regional spread. Illustrative figures — to be confirmed with real data.",
@@ -191,7 +190,6 @@ window.SETCIA_I18N = {
     "contact.form.message": "Your message",
     "contact.form.message.ph": "Tell us how we can help…",
     "contact.form.submit": "Send message",
-    "contact.form.note": "The form posts to Formspree — replace the action URL with your own Formspree endpoint to start receiving messages.",
 
     "contact.info.title": "Visit, call, or email",
     "contact.info.addr.title": "Address",
@@ -356,7 +354,6 @@ window.SETCIA_I18N = {
     "impact.crumb": "ผลงาน",
     "impact.title": "ผลงานและอินโฟกราฟิก",
     "impact.lead": "ภาพรวมเชิงข้อมูลของงานด้านนานาชาติ — ความร่วมมือ การเคลื่อนย้ายนักศึกษา ทุนการศึกษา และกิจกรรม แต่ละชิ้นสร้างจากข้อมูลจริงและอัปเดตเมื่อมีตัวเลขใหม่",
-    "impact.intro": "อินโฟกราฟิกใหม่สร้างจากไฟล์ที่วางในกล่องรับข้อมูล (Infographic Inbox) — เพียงบอกผู้ช่วย Claude ว่า \"ทำอินโฟกราฟิกจากกล่อง inbox\"",
     "impact.download": "ดาวน์โหลด SVG",
     "impact.ig1.title": "SET International — ภาพรวม",
     "impact.ig1.desc": "สรุปหน้าเดียว: พันธมิตร นักศึกษาแลกเปลี่ยน จำนวนประเทศ และการกระจายตามภูมิภาค (ตัวเลขตัวอย่าง — รอยืนยันข้อมูลจริง)",
@@ -392,7 +389,6 @@ window.SETCIA_I18N = {
     "contact.form.message": "ข้อความของคุณ",
     "contact.form.message.ph": "บอกเราว่าจะช่วยอะไรได้บ้าง…",
     "contact.form.submit": "ส่งข้อความ",
-    "contact.form.note": "ฟอร์มนี้ส่งไปยัง Formspree — แทนที่ URL ใน action ด้วย Formspree endpoint ของคุณเพื่อเริ่มรับข้อความ",
 
     "contact.info.title": "เยี่ยมชม โทร หรือส่งอีเมล",
     "contact.info.addr.title": "ที่อยู่",
