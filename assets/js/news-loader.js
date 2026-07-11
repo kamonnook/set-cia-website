@@ -44,6 +44,16 @@
      Same fields as the sheet columns. Newest dates appear first. */
   const BUILTIN_ITEMS = [
     {
+      date: "2026-07-11", category: "opportunities",
+      tag_en: "Scholarship", tag_th: "ทุนการศึกษา",
+      title_en: "IACS 2026: free 45-day arts & culture program in Indonesia — apply by 16 July",
+      title_th: "ทุน IACS 2026 เรียนรู้ศิลปวัฒนธรรมอินโดนีเซียฟรี 45 วัน — ปิดรับ 16 ก.ค. นี้",
+      description_en: "The Indonesian Government's Arts and Culture Scholarship offers Thai students a fully-funded 45-day program (3 Aug – 16 Sep 2026) with Jakarta State University. Requires passport, medical certificate, and English test result. Deadline: 16 July 2026, 23:59.",
+      description_th: "รัฐบาลอินโดนีเซียเปิดรับสมัครทุนศิลปะ ภาษา และวัฒนธรรม 45 วัน (3 ส.ค. – 16 ก.ย. 2026) ร่วมกับมหาวิทยาลัยแห่งรัฐจาการ์ตา ไม่มีค่าใช้จ่าย ใช้หนังสือเดินทาง ใบรับรองแพทย์ และผลทดสอบภาษาอังกฤษ ปิดรับ 16 ก.ค. 2026 เวลา 23.59 น.",
+      link: "https://kamonnook.github.io/set-cia-website/assets/images/news/iacs-2026-poster.jpg",
+      color: "teal",
+    },
+    {
       date: "2026-05-29", category: "news",
       tag_en: "Awards", tag_th: "รางวัล",
       title_en: "SET faculty win WUSTP research & industrial collaboration awards",
