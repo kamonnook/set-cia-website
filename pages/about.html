@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — SET CIA · Walailak University</title>
-  <meta name="description" content="About the Center for International Affairs at the School of Engineering and Technology, Walailak University." />
+  <title>About — SET International Affairs · Walailak University</title>
+  <meta name="description" content="About the International Affairs unit of the School of Engineering and Technology, Walailak University." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,10 +15,10 @@
   <header class="site-header">
     <div class="container nav">
       <a href="../index.html" class="brand">
-        <div class="brand-mark">CIA</div>
+        <span class="brand-logo-chip"><img src="../assets/images/set-logo.png" alt="SET — School of Engineering and Technology, Walailak University" /></span>
         <div>
-          <div data-i18n="brand.title">SET CIA</div>
-          <small data-i18n="brand.subtitle">Center for International Affairs · Walailak University</small>
+          <div data-i18n="brand.title">SET International Affairs</div>
+          <small data-i18n="brand.subtitle">School of Engineering & Technology · Walailak University</small>
         </div>
       </a>
       <ul class="nav-links">
@@ -40,8 +40,17 @@
   <section class="page-hero">
     <div class="container">
       <div class="breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a> / <span data-i18n="about.crumb">About</span></div>
-      <h1 data-i18n="about.title">About the Center for International Affairs</h1>
-      <p data-i18n="about.lead">We are the gateway that connects Walailak's School of Engineering and Technology to the world — building bridges for students, researchers, and partner institutions.</p>
+      <h1 data-i18n="about.title">About SET International Affairs</h1>
+      <p data-i18n="about.lead">We are the school-level International Affairs unit of the School of Engineering and Technology (SET) — building bridges to the world for our six engineering departments.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <div class="callout">
+        <h3 data-i18n="about.cia.title">School level, university wide</h3>
+        <p data-i18n="about.cia.body">SET International Affairs is the international arm of the School of Engineering and Technology. We work hand-in-hand with Walailak University's Center for International Affairs (CIA) — the university-level office — while driving the school's own MOUs, double-degree programs, Erasmus+ projects, and staff &amp; student mobility.</p>
+      </div>
     </div>
   </section>
 
@@ -96,29 +105,28 @@
         <h2 data-i18n="about.team.title">Our Team</h2>
         <p data-i18n="about.team.sub">Reach out to the right person for your inquiry.</p>
       </div>
-      <div class="grid cols-4">
-        <div class="card text-center">
-          <div class="icon" style="margin:0 auto 16px;">👤</div>
-          <h3>Asst. Prof. Dr. ___</h3>
-          <p data-i18n="about.team.role1">Director, International Affairs</p>
+      <div class="grid cols-2">
+        <div class="card leader-card">
+          <div class="avatar">MS</div>
+          <h3>Asst. Prof. Dr. Monthian Setkit</h3>
+          <p class="role" data-i18n="about.team.role1">Dean, School of Engineering and Technology</p>
+          <p class="dept"><a href="mailto:smonthia@wu.ac.th">smonthia@wu.ac.th</a></p>
         </div>
-        <div class="card text-center">
-          <div class="icon" style="margin:0 auto 16px;">👤</div>
-          <h3>Ms. ___</h3>
-          <p data-i18n="about.team.role2">Outbound Programs Coordinator</p>
-        </div>
-        <div class="card text-center">
-          <div class="icon" style="margin:0 auto 16px;">👤</div>
-          <h3>Mr. ___</h3>
-          <p data-i18n="about.team.role3">Inbound Programs Coordinator</p>
-        </div>
-        <div class="card text-center">
-          <div class="icon" style="margin:0 auto 16px;">👤</div>
-          <h3>Ms. ___</h3>
-          <p data-i18n="about.team.role4">Partnerships & MOU Officer</p>
+        <div class="card leader-card">
+          <div class="avatar">KT</div>
+          <h3>Asst. Prof. Dr. Kamon Thinsurat</h3>
+          <p class="role" data-i18n="about.team.role2">Assistant Dean for International Affairs</p>
+          <p class="dept"><a href="mailto:kamon.th@wu.ac.th">kamon.th@wu.ac.th</a></p>
         </div>
       </div>
-      <div class="note mt-4">Edit <code>pages/about.html</code> to replace the team placeholder names and add photos.</div>
+      <div class="grid cols-3 mt-4">
+        <div class="discipline"><div class="d-ic">🏗️</div><div><h4>Civil Engineering</h4><small>วิศวกรรมโยธา</small></div></div>
+        <div class="discipline"><div class="d-ic">⚡</div><div><h4>Electrical Engineering</h4><small>วิศวกรรมไฟฟ้า</small></div></div>
+        <div class="discipline"><div class="d-ic">💻</div><div><h4>Computer Engineering &amp; Electronics</h4><small>วิศวกรรมคอมพิวเตอร์ฯ</small></div></div>
+        <div class="discipline"><div class="d-ic">🤖</div><div><h4>Mechanical &amp; Robotic Engineering</h4><small>วิศวกรรมเครื่องกลและหุ่นยนต์</small></div></div>
+        <div class="discipline"><div class="d-ic">⚗️</div><div><h4>Chemical Engineering</h4><small>วิศวกรรมเคมี</small></div></div>
+        <div class="discipline"><div class="d-ic">🧪</div><div><h4>Petrochemical &amp; Polymer Engineering</h4><small>วิศวกรรมปิโตรเคมีและพอลิเมอร์</small></div></div>
+      </div>
     </div>
   </section>
 
@@ -127,10 +135,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand" style="color:#fff;">
-            <div class="brand-mark">CIA</div>
-            <div><div data-i18n="brand.title">SET CIA</div><small style="color:#93a4aa;" data-i18n="brand.subtitle">Center for International Affairs · Walailak University</small></div>
+            <span class="brand-logo-chip"><img src="../assets/images/set-logo.png" alt="SET — School of Engineering and Technology, Walailak University" /></span>
+            <div><div data-i18n="brand.title">SET International Affairs</div><small style="color:#93a4aa;" data-i18n="brand.subtitle">School of Engineering & Technology · Walailak University</small></div>
           </div>
-          <p data-i18n="footer.about">The Center for International Affairs (CIA) of the School of Engineering and Technology, Walailak University.</p>
+          <p data-i18n="footer.about">The International Affairs unit of the School of Engineering and Technology (SET), Walailak University.</p>
         </div>
         <div><h4 data-i18n="footer.explore">Explore</h4>
           <a href="about.html" data-i18n="nav.about">About</a>
@@ -151,7 +159,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2026 SET CIA, Walailak University. All rights reserved.</span>
+        <span data-i18n="footer.copyright">© 2026 SET International Affairs, Walailak University. All rights reserved.</span>
         <span>Made with care for international engineering.</span>
       </div>
     </div>

@@ -15,18 +15,18 @@ window.SETCIA_I18N = {
     "nav.apply": "Apply Now",
 
     /* Brand */
-    "brand.title": "SET CIA",
-    "brand.subtitle": "Center for International Affairs · Walailak University",
+    "brand.title": "SET International Affairs",
+    "brand.subtitle": "School of Engineering & Technology · Walailak University",
 
     /* Home */
     "home.eyebrow": "Walailak University · School of Engineering & Technology",
     "home.title.line1": "Engineering futures",
     "home.title.highlight": "without borders",
-    "home.lead": "The Center for International Affairs (CIA) connects students, faculty, and global partners through exchanges, joint programs, scholarships, and research collaboration.",
+    "home.lead": "SET International Affairs is the school-level gateway of the School of Engineering and Technology — connecting students, faculty, and 15 partner universities through exchanges, double-degree programs, Erasmus+, and joint research.",
     "home.cta.primary": "Explore Programs",
     "home.cta.secondary": "Partner with Us",
-    "home.stats.partners": "Global Partners",
-    "home.stats.students": "Exchange Students",
+    "home.stats.partners": "Partner Universities",
+    "home.stats.students": "MOU / MOA Agreements",
     "home.stats.countries": "Countries",
 
     "home.what.eyebrow": "What We Offer",
@@ -48,7 +48,7 @@ window.SETCIA_I18N = {
 
     "home.partners.eyebrow": "Our Network",
     "home.partners.title": "Partner Institutions",
-    "home.partners.sub": "Working with universities and organizations from over 20 countries.",
+    "home.partners.sub": "Universities with a signed MOU / MOA in the school's partnership register — 11 countries across Asia and Europe.",
     "home.partners.cta": "See all partners",
 
     "home.news.eyebrow": "Latest Updates",
@@ -62,8 +62,8 @@ window.SETCIA_I18N = {
 
     /* About */
     "about.crumb": "About",
-    "about.title": "About the Center for International Affairs",
-    "about.lead": "We are the gateway that connects Walailak's School of Engineering and Technology to the world — building bridges for students, researchers, and partner institutions.",
+    "about.title": "About SET International Affairs",
+    "about.lead": "We are the school-level International Affairs unit of the School of Engineering and Technology (SET) — building bridges to the world for our six engineering departments.",
 
     "about.mission.title": "Our Mission",
     "about.mission.body": "To globalize engineering education at Walailak University by enabling meaningful international experiences for every student, fostering world-class research collaboration, and welcoming global talent to our campus.",
@@ -83,18 +83,18 @@ window.SETCIA_I18N = {
 
     "about.team.title": "Our Team",
     "about.team.sub": "Reach out to the right person for your inquiry.",
-    "about.team.role1": "Director, International Affairs",
-    "about.team.role2": "Outbound Programs Coordinator",
+    "about.team.role1": "Dean, School of Engineering and Technology",
+    "about.team.role2": "Assistant Dean for International Affairs",
     "about.team.role3": "Inbound Programs Coordinator",
     "about.team.role4": "Partnerships & MOU Officer",
 
     /* Partners */
     "partners.crumb": "Partners",
     "partners.title": "Our Global Partners",
-    "partners.lead": "We collaborate with leading universities, research institutes, and industry leaders across Asia, Europe, Oceania, and the Americas.",
+    "partners.lead": "Every partnership below comes from the school's official MOU / MOA register — 16 agreements with 15 universities in 11 countries.",
 
     "partners.list.title": "Active Partnerships",
-    "partners.list.sub": "Universities and organizations with active student or research collaboration.",
+    "partners.list.sub": "As recorded in the SET partnership register (updated 2025).",
 
     "partners.ad.title": "Partner Advertising & Spotlight",
     "partners.ad.sub": "Are you a partner institution with a program, scholarship, or summer school to promote to our students? Feature it here.",
@@ -143,7 +143,7 @@ window.SETCIA_I18N = {
     /* News */
     "news.crumb": "News",
     "news.title": "News & Events",
-    "news.lead": "Open calls, partner news, student stories, and upcoming events from the Center for International Affairs.",
+    "news.lead": "Open calls, partner news, student stories, and upcoming events from SET International Affairs.",
     "news.read": "Read more",
     "news.filter.all": "All",
     "news.filter.news": "News",
@@ -162,6 +162,11 @@ window.SETCIA_I18N = {
     "impact.ig2.title": "SET International Activity 2025",
     "impact.ig2.desc": "The year in numbers — 30+ international activities, 14 partner universities, 10 countries, and 5 degree / Erasmus+ programs in development. Source: SET Internationalization Report, Oct 2024 – Sep 2025.",
     "impact.ig2.date": "Report · Oct 2024 – Sep 2025",
+    "impact.ig3.title": "SET Global Partnerships — MOU / MOA",
+    "impact.ig3.desc": "The school's partnership register, visualized — 16 MOU / MOA agreements with 15 universities in 11 countries; 12 active and 8 newly signed in 2024–2025. Source: List of MOU / MOA with SET.",
+    "impact.ig3.date": "Register · 2015 – 2025",
+    "about.cia.title": "School level, university wide",
+    "about.cia.body": "SET International Affairs is the international arm of the School of Engineering and Technology. We work hand-in-hand with Walailak University's Center for International Affairs (CIA) — the university-level office — while driving the school's own MOUs, double-degree programs, Erasmus+ projects, and staff & student mobility.",
 
     /* Contact */
     "contact.crumb": "Contact",
@@ -197,14 +202,14 @@ window.SETCIA_I18N = {
     "contact.info.hours.body": "Mon–Fri, 09:00–16:30 (ICT)",
 
     /* Footer */
-    "footer.about": "The Center for International Affairs (CIA) of the School of Engineering and Technology, Walailak University.",
+    "footer.about": "The International Affairs unit of the School of Engineering and Technology (SET), Walailak University — working hand-in-hand with the university's Center for International Affairs.",
     "footer.explore": "Explore",
     "footer.connect": "Connect",
     "footer.resources": "Resources",
     "footer.resources.handbook": "Student Handbook",
     "footer.resources.partners": "Partner Portal",
     "footer.resources.faq": "FAQ",
-    "footer.copyright": "© 2026 SET CIA, Walailak University. All rights reserved."
+    "footer.copyright": "© 2026 SET International Affairs, Walailak University. All rights reserved."
   },
 
   th: {
@@ -217,17 +222,17 @@ window.SETCIA_I18N = {
     "nav.impact": "ผลงาน",
     "nav.apply": "สมัครเลย",
 
-    "brand.title": "SET CIA",
-    "brand.subtitle": "ศูนย์กิจการต่างประเทศ · มหาวิทยาลัยวลัยลักษณ์",
+    "brand.title": "กิจการต่างประเทศ SET",
+    "brand.subtitle": "สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี · มหาวิทยาลัยวลัยลักษณ์",
 
     "home.eyebrow": "มหาวิทยาลัยวลัยลักษณ์ · สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี",
     "home.title.line1": "สร้างวิศวกรของอนาคต",
     "home.title.highlight": "ไร้พรมแดน",
-    "home.lead": "ศูนย์กิจการต่างประเทศ (CIA) เชื่อมโยงนักศึกษา อาจารย์ และพันธมิตรทั่วโลกผ่านการแลกเปลี่ยน หลักสูตรร่วม ทุนการศึกษา และความร่วมมือด้านการวิจัย",
+    "home.lead": "งานกิจการต่างประเทศระดับสำนักวิชา เชื่อมโยงนักศึกษา อาจารย์ และมหาวิทยาลัยพันธมิตร 15 แห่ง ผ่านการแลกเปลี่ยน หลักสูตรปริญญาคู่ Erasmus+ และงานวิจัยร่วม",
     "home.cta.primary": "ดูโปรแกรมทั้งหมด",
     "home.cta.secondary": "ร่วมเป็นพันธมิตร",
-    "home.stats.partners": "พันธมิตรทั่วโลก",
-    "home.stats.students": "นักศึกษาแลกเปลี่ยน",
+    "home.stats.partners": "มหาวิทยาลัยพันธมิตร",
+    "home.stats.students": "ข้อตกลง MOU / MOA",
     "home.stats.countries": "ประเทศ",
 
     "home.what.eyebrow": "สิ่งที่เรามอบให้",
@@ -249,7 +254,7 @@ window.SETCIA_I18N = {
 
     "home.partners.eyebrow": "เครือข่ายของเรา",
     "home.partners.title": "สถาบันพันธมิตร",
-    "home.partners.sub": "ทำงานร่วมกับมหาวิทยาลัยและองค์กรจากกว่า 20 ประเทศ",
+    "home.partners.sub": "มหาวิทยาลัยที่มี MOU / MOA ในทะเบียนความร่วมมือของสำนักวิชา — 11 ประเทศในเอเชียและยุโรป",
     "home.partners.cta": "ดูพันธมิตรทั้งหมด",
 
     "home.news.eyebrow": "อัปเดตล่าสุด",
@@ -262,8 +267,8 @@ window.SETCIA_I18N = {
     "home.cta.button": "ติดต่อเรา",
 
     "about.crumb": "เกี่ยวกับเรา",
-    "about.title": "เกี่ยวกับศูนย์กิจการต่างประเทศ",
-    "about.lead": "เราคือประตูที่เชื่อมโยงสำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี มหาวิทยาลัยวลัยลักษณ์ สู่โลก — สร้างสะพานเชื่อมระหว่างนักศึกษา นักวิจัย และสถาบันพันธมิตร",
+    "about.title": "เกี่ยวกับงานกิจการต่างประเทศ SET",
+    "about.lead": "เราคืองานกิจการต่างประเทศระดับสำนักวิชา ของสำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี (SET) — สร้างสะพานสู่โลกให้กับทั้ง 6 สาขาวิศวกรรมของเรา",
 
     "about.mission.title": "พันธกิจ",
     "about.mission.body": "ขับเคลื่อนการศึกษาด้านวิศวกรรมของวลัยลักษณ์สู่ระดับสากล โดยเปิดโอกาสประสบการณ์นานาชาติให้นักศึกษาทุกคน ส่งเสริมความร่วมมือด้านการวิจัยระดับโลก และต้อนรับนักศึกษาต่างชาติเข้ามาสู่วิทยาเขตของเรา",
@@ -283,17 +288,17 @@ window.SETCIA_I18N = {
 
     "about.team.title": "ทีมงาน",
     "about.team.sub": "ติดต่อบุคคลที่เหมาะสมกับเรื่องของคุณ",
-    "about.team.role1": "ผู้อำนวยการ ฝ่ายกิจการต่างประเทศ",
-    "about.team.role2": "ผู้ประสานงานโปรแกรมนักศึกษาออก",
+    "about.team.role1": "คณบดี สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี",
+    "about.team.role2": "ผู้ช่วยคณบดีฝ่ายกิจการต่างประเทศ",
     "about.team.role3": "ผู้ประสานงานโปรแกรมนักศึกษาเข้า",
     "about.team.role4": "เจ้าหน้าที่ฝ่ายความร่วมมือและ MOU",
 
     "partners.crumb": "พันธมิตร",
     "partners.title": "พันธมิตรทั่วโลกของเรา",
-    "partners.lead": "เราร่วมมือกับมหาวิทยาลัยชั้นนำ สถาบันวิจัย และผู้นำในอุตสาหกรรมจากเอเชีย ยุโรป โอเชียเนีย และอเมริกา",
+    "partners.lead": "ทุกความร่วมมือด้านล่างมาจากทะเบียน MOU / MOA อย่างเป็นทางการของสำนักวิชา — 16 ฉบับ กับ 15 มหาวิทยาลัยใน 11 ประเทศ",
 
     "partners.list.title": "พันธมิตรที่กำลังดำเนินการ",
-    "partners.list.sub": "มหาวิทยาลัยและองค์กรที่มีการแลกเปลี่ยนนักศึกษาหรืองานวิจัยอยู่ในปัจจุบัน",
+    "partners.list.sub": "ตามทะเบียนความร่วมมือของสำนักวิชา (อัปเดต 2025)",
 
     "partners.ad.title": "การโฆษณาและสปอตไลท์สำหรับพันธมิตร",
     "partners.ad.sub": "เป็นสถาบันพันธมิตรที่มีโปรแกรม ทุน หรือโปรแกรมภาคฤดูร้อนที่อยากโปรโมตให้นักศึกษาของเรา? นำเสนอที่นี่",
@@ -340,7 +345,7 @@ window.SETCIA_I18N = {
 
     "news.crumb": "ข่าวสาร",
     "news.title": "ข่าวสารและกิจกรรม",
-    "news.lead": "ประกาศรับสมัคร ข่าวพันธมิตร เรื่องราวนักศึกษา และกิจกรรมที่กำลังจะเกิดขึ้นจากศูนย์กิจการต่างประเทศ",
+    "news.lead": "ประกาศรับสมัคร ข่าวพันธมิตร เรื่องราวนักศึกษา และกิจกรรมที่กำลังจะเกิดขึ้นจากงานกิจการต่างประเทศ SET",
     "news.read": "อ่านต่อ",
     "news.filter.all": "ทั้งหมด",
     "news.filter.news": "ข่าว",
@@ -359,6 +364,11 @@ window.SETCIA_I18N = {
     "impact.ig2.title": "กิจกรรมนานาชาติ SET ปี 2025",
     "impact.ig2.desc": "สรุปทั้งปีเป็นตัวเลข — กิจกรรมนานาชาติกว่า 30 รายการ, มหาวิทยาลัยพันธมิตร 14 แห่ง, 10 ประเทศ และหลักสูตรร่วม / Erasmus+ ที่กำลังพัฒนา 5 หลักสูตร ที่มา: รายงานความเป็นนานาชาติ SET, ต.ค. 2024 – ก.ย. 2025",
     "impact.ig2.date": "รายงาน · ต.ค. 2024 – ก.ย. 2025",
+    "impact.ig3.title": "เครือข่ายความร่วมมือ MOU / MOA ของ SET",
+    "impact.ig3.desc": "ภาพรวมทะเบียนความร่วมมือของสำนักวิชา — ข้อตกลง 16 ฉบับ กับ 15 มหาวิทยาลัยใน 11 ประเทศ มีผลอยู่ 12 ฉบับ และลงนามใหม่ 8 ฉบับช่วงปี 2024–2025 ที่มา: ทะเบียน MOU / MOA ของสำนักวิชา",
+    "impact.ig3.date": "ทะเบียน · 2015 – 2025",
+    "about.cia.title": "ระดับสำนักวิชา เชื่อมโยงทั้งมหาวิทยาลัย",
+    "about.cia.body": "งานกิจการต่างประเทศ SET เป็นหน่วยงานระดับสำนักวิชาของสำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี ทำงานประสานกับศูนย์กิจการนานาชาติ (CIA) ซึ่งเป็นหน่วยงานระดับมหาวิทยาลัย โดยขับเคลื่อน MOU หลักสูตรปริญญาคู่ โครงการ Erasmus+ และการแลกเปลี่ยนอาจารย์-นักศึกษาของสำนักวิชาเอง",
 
     "contact.crumb": "ติดต่อ",
     "contact.title": "ติดต่อเรา",
@@ -392,13 +402,13 @@ window.SETCIA_I18N = {
     "contact.info.hours.title": "เวลาทำการ",
     "contact.info.hours.body": "จันทร์–ศุกร์ 09:00–16:30 น. (เวลาประเทศไทย)",
 
-    "footer.about": "ศูนย์กิจการต่างประเทศ (CIA) สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี มหาวิทยาลัยวลัยลักษณ์",
+    "footer.about": "งานกิจการต่างประเทศ สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี (SET) มหาวิทยาลัยวลัยลักษณ์ — ทำงานร่วมกับศูนย์กิจการนานาชาติของมหาวิทยาลัย",
     "footer.explore": "สำรวจ",
     "footer.connect": "ติดตาม",
     "footer.resources": "แหล่งข้อมูล",
     "footer.resources.handbook": "คู่มือนักศึกษา",
     "footer.resources.partners": "พอร์ทัลพันธมิตร",
     "footer.resources.faq": "คำถามที่พบบ่อย",
-    "footer.copyright": "© 2026 SET CIA มหาวิทยาลัยวลัยลักษณ์ สงวนลิขสิทธิ์ทั้งหมด"
+    "footer.copyright": "© 2026 งานกิจการต่างประเทศ SET มหาวิทยาลัยวลัยลักษณ์ สงวนลิขสิทธิ์ทั้งหมด"
   }
 };

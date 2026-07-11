@@ -1,6 +1,6 @@
-# SET CIA Website
+# SET International Affairs Website
 
-A free, modern, bilingual (English / Thai) website for the **Center for International Affairs** of the **School of Engineering and Technology, Walailak University**.
+A free, modern, bilingual (English / Thai) website for the **International Affairs unit** of the **School of Engineering and Technology (SET), Walailak University** (school level — distinct from the university’s Center for International Affairs).
 
 Pure HTML / CSS / JavaScript — no build step, no framework, no server required. Designed to deploy free on **GitHub Pages**, Netlify, Vercel, Cloudflare Pages, or any static host.
 
