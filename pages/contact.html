@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — SET CIA · Walailak University</title>
+  <meta name="description" content="Get in touch with the Center for International Affairs at the School of Engineering and Technology, Walailak University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="brand">
+        <div class="brand-mark">CIA</div>
+        <div><div data-i18n="brand.title">SET CIA</div><small data-i18n="brand.subtitle">Center for International Affairs · Walailak University</small></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="partners.html" data-i18n="nav.partners">Partners</a></li>
+        <li><a href="programs.html" data-i18n="nav.programs">Programs</a></li>
+        <li><a href="news.html" data-i18n="nav.news">News</a></li>
+        <li><a href="impact.html" data-i18n="nav.impact">Impact</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><div class="lang-toggle"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button></div></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a> / <span data-i18n="contact.crumb">Contact</span></div>
+      <h1 data-i18n="contact.title">Get in Touch</h1>
+      <p data-i18n="contact.lead">Are you a prospective student, partner institution, or current student with a question? Tell us a little about you and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="display:grid; grid-template-columns: 1.4fr 1fr; gap:40px;">
+      <!-- Form -->
+      <form class="form-card" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field-row">
+          <div class="field">
+            <label data-i18n="contact.form.name">Full name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="field">
+            <label data-i18n="contact.form.email">Email address</label>
+            <input type="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label data-i18n="contact.form.role">I am a…</label>
+            <select name="role" required>
+              <option value="student" data-i18n="contact.form.role.student">Prospective international student</option>
+              <option value="partner" data-i18n="contact.form.role.partner">Partner / institution representative</option>
+              <option value="walailak" data-i18n="contact.form.role.walailak">Walailak student</option>
+              <option value="other" data-i18n="contact.form.role.other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label data-i18n="contact.form.country">Country</label>
+            <input type="text" name="country" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label data-i18n="contact.form.topic">Topic of interest</label>
+          <select name="topic" id="topic">
+            <option value="exchange" data-i18n="contact.form.topic.exchange">Exchange / Mobility</option>
+            <option value="degree" data-i18n="contact.form.topic.degree">Degree program</option>
+            <option value="scholarship" data-i18n="contact.form.topic.scholarship">Scholarship</option>
+            <option value="partnership" data-i18n="contact.form.topic.partnership">Partnership / MOU</option>
+            <option value="advertising" data-i18n="contact.form.topic.advertising">Partner advertising opportunity</option>
+            <option value="other" data-i18n="contact.form.topic.other">Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label data-i18n="contact.form.message">Your message</label>
+          <textarea name="message" required data-i18n-placeholder="contact.form.message.ph" placeholder="Tell us how we can help…"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit" data-i18n="contact.form.submit">Send message</button>
+        <p class="note mt-2" data-i18n="contact.form.note">The form posts to Formspree — replace the action URL with your own Formspree endpoint to start receiving messages.</p>
+      </form>
+
+      <!-- Info -->
+      <aside>
+        <div class="card">
+          <h3 data-i18n="contact.info.title">Visit, call, or email</h3>
+          <p style="margin-top:14px;"><b data-i18n="contact.info.addr.title">Address</b><br>
+            <span data-i18n="contact.info.addr.body">School of Engineering and Technology, Walailak University, 222 Thaiburi, Tha Sala District, Nakhon Si Thammarat 80161, Thailand</span>
+          </p>
+          <p><b data-i18n="contact.info.phone.title">Phone</b><br>+66 (0)75 672 000</p>
+          <p><b data-i18n="contact.info.email.title">Email</b><br><a href="mailto:ia.set@mail.wu.ac.th">ia.set@mail.wu.ac.th</a></p>
+          <p><b data-i18n="contact.info.hours.title">Office Hours</b><br><span data-i18n="contact.info.hours.body">Mon–Fri, 09:00–16:30 (ICT)</span></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand" style="color:#fff;"><div class="brand-mark">CIA</div><div><div data-i18n="brand.title">SET CIA</div><small style="color:#93a4aa;" data-i18n="brand.subtitle">Center for International Affairs · Walailak University</small></div></div>
+          <p data-i18n="footer.about">The Center for International Affairs (CIA) of the School of Engineering and Technology, Walailak University.</p>
+        </div>
+        <div><h4 data-i18n="footer.explore">Explore</h4>
+          <a href="about.html" data-i18n="nav.about">About</a><a href="partners.html" data-i18n="nav.partners">Partners</a>
+          <a href="programs.html" data-i18n="nav.programs">Programs</a><a href="news.html" data-i18n="nav.news">News</a><a href="impact.html" data-i18n="nav.impact">Impact</a>
+        </div>
+        <div><h4 data-i18n="footer.resources">Resources</h4>
+          <a href="news.html" data-i18n="footer.resources.handbook">Student Handbook</a>
+          <a href="partners.html" data-i18n="footer.resources.partners">Partner Portal</a>
+          <a href="contact.html" data-i18n="footer.resources.faq">FAQ</a>
+        </div>
+        <div><h4 data-i18n="footer.connect">Connect</h4>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="https://www.wu.ac.th" target="_blank" rel="noopener">Walailak University ↗</a>
+          <a href="mailto:ia.set@mail.wu.ac.th">ia.set@mail.wu.ac.th</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span data-i18n="footer.copyright">© 2026 SET CIA, Walailak University. All rights reserved.</span><span>Made with care for international engineering.</span></div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // pre-select topic via ?topic= query param
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const topic = params.get("topic");
+      if (topic) {
+        const sel = document.getElementById("topic");
+        if (sel) sel.value = topic;
+      }
+    })();
+  </script>
+</body>
+</html>
