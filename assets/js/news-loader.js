@@ -44,6 +44,26 @@
      Same fields as the sheet columns. Newest dates appear first. */
   const BUILTIN_ITEMS = [
     {
+      date: "2026-05-29", category: "news",
+      tag_en: "Awards", tag_th: "รางวัล",
+      title_en: "SET faculty win WUSTP research & industrial collaboration awards",
+      title_th: "คณาจารย์ SET คว้ารางวัลวิจัยและความร่วมมืออุตสาหกรรมจาก WUSTP",
+      description_en: "Dean Assoc. Prof. Dr. Monthian Setkit received the Research Collaboration Partner Award; Assoc. Prof. Dr. Suratsavadee Koonlaboon Korkua and Asst. Prof. Dr. Nirattisai Rakmak received Research Funding & Collaboration Leader Awards.",
+      description_th: "คณบดี รศ.ดร.มนเทียร เสร็จกิจ รับรางวัล Research Collaboration Partner ส่วน รศ.ดร.สุรัสวดี กุลบุญ ก่อเกื้อ และ ผศ.ดร.นิรัติศัย รักมาก รับรางวัล Research Funding & Collaboration Leader",
+      link: "https://engineer.wu.ac.th/en/blog/2026/05/29/school-of-engineering-and-technology-at-walailak-university-wins-prestigious-awards-for-research-funding-and-industrial-collaboration/",
+      color: "gold",
+    },
+    {
+      date: "2026-02-24", category: "news",
+      tag_en: "Promotion", tag_th: "แต่งตั้ง",
+      title_en: "Assoc. Prof. Dr. Nattawit Wattanasakulpong approved for the rank of Professor",
+      title_th: "อนุมัติแต่งตั้ง รศ.ดร.ณัฐวิทย์ วัฒนสกุลพงศ์ ดำรงตำแหน่งศาสตราจารย์",
+      description_en: "Congratulations to our Mechanical & Robotic Engineering faculty member on approval for the academic rank of Professor.",
+      description_th: "ขอแสดงความยินดีกับอาจารย์ประจำสาขาวิศวกรรมเครื่องกลและหุ่นยนต์ ในโอกาสได้รับอนุมัติแต่งตั้งให้ดำรงตำแหน่งศาสตราจารย์",
+      link: "https://engineer.wu.ac.th/en/blog/2026/02/24/school-of-engineering-and-technology-congratulates-associate-professor-dr-nattawit-wattanaskulphong-on-approval-for-the-academic-rank-of-professor/",
+      color: "purple",
+    },
+    {
       date: "2026-05-13", category: "news",
       tag_en: "Student Mobility", tag_th: "นักศึกษาแลกเปลี่ยน",
       title_en: "WU and Universiti Teknologi PETRONAS conclude exchange program",
