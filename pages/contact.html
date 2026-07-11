@@ -43,7 +43,15 @@
   <section>
     <div class="container" style="display:grid; grid-template-columns: 1.4fr 1fr; gap:40px;">
       <!-- Form -->
-      <form class="form-card" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="form-card" id="contact-form" action="https://formsubmit.co/kamon.th@wu.ac.th" method="POST">
+        <input type="hidden" name="_subject" value="[SET International Affairs] New website inquiry" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://kamonnook.github.io/set-cia-website/pages/contact.html?sent=1" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <div id="sent-note" class="note" style="display:none; margin-bottom:18px; background:#e7f6ee; border-color:#bfe6cf; color:#1c7a48;">
+          ✅ Message sent — we'll get back to you soon. · ส่งข้อความเรียบร้อยแล้ว เราจะติดต่อกลับโดยเร็ว
+        </div>
         <div class="field-row">
           <div class="field">
             <label data-i18n="contact.form.name">Full name</label>
@@ -89,8 +97,9 @@
         </div>
 
         <button class="btn btn-primary" type="submit" data-i18n="contact.form.submit">Send message</button>
-        <!-- Editors: the form posts to Formspree — replace the action URL with
-             your own Formspree endpoint to start receiving messages. -->
+        <!-- Editors: the form posts via formsubmit.co to kamon.th@wu.ac.th.
+             First-ever submission triggers a one-time activation email to that
+             address — click the link in it once and the form goes live. -->
       </form>
 
       <!-- Info -->
@@ -100,8 +109,8 @@
           <p style="margin-top:14px;"><b data-i18n="contact.info.addr.title">Address</b><br>
             <span data-i18n="contact.info.addr.body">School of Engineering and Technology, Walailak University, 222 Thaiburi, Tha Sala District, Nakhon Si Thammarat 80161, Thailand</span>
           </p>
-          <p><b data-i18n="contact.info.phone.title">Phone</b><br>+66 (0)75 672 000</p>
-          <p><b data-i18n="contact.info.email.title">Email</b><br><a href="mailto:ia.set@mail.wu.ac.th">ia.set@mail.wu.ac.th</a></p>
+          <p><b data-i18n="contact.info.phone.title">Phone</b><br>+66 (0)75 672 304–5</p>
+          <p><b data-i18n="contact.info.email.title">Email</b><br><a href="mailto:kamon.th@wu.ac.th">kamon.th@wu.ac.th</a></p>
           <p><b data-i18n="contact.info.hours.title">Office Hours</b><br><span data-i18n="contact.info.hours.body">Mon–Fri, 09:00–16:30 (ICT)</span></p>
         </div>
       </aside>
@@ -129,7 +138,7 @@
           <a href="https://www.wu.ac.th" target="_blank" rel="noopener">Walailak University ↗</a>
           <a href="https://engineer.wu.ac.th/en/" target="_blank" rel="noopener">SET Official Site ↗</a>
           <a href="https://cia.wu.ac.th/" target="_blank" rel="noopener">WU Int’l Affairs (CIA) ↗</a>
-          <a href="mailto:ia.set@mail.wu.ac.th">ia.set@mail.wu.ac.th</a>
+          <a href="mailto:kamon.th@wu.ac.th">kamon.th@wu.ac.th</a>
         </div>
       </div>
       <div class="footer-bottom"><span data-i18n="footer.copyright">© 2026 SET International Affairs, Walailak University. All rights reserved.</span><span>Made with care for international engineering.</span></div>
@@ -148,6 +157,12 @@
         if (sel) sel.value = topic;
       }
     })();
+  </script>
+<script>
+    if (new URLSearchParams(location.search).has("sent")) {
+      var n = document.getElementById("sent-note");
+      if (n) { n.style.display = "block"; n.scrollIntoView({ block: "center" }); }
+    }
   </script>
 </body>
 </html>

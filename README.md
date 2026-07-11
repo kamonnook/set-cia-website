@@ -81,7 +81,11 @@ If you own a domain like `cia.set.wu.ac.th`:
 
 ---
 
-## Make the inquiry form work (Formspree — free)
+## Inquiry form (FormSubmit — free, already wired)
+
+The form posts to formsubmit.co and forwards to kamon.th@wu.ac.th. The first submission triggers a one-time activation email — click the link in it once. To change the recipient, edit the form action in `pages/contact.html`.
+
+### Alternative: Formspree
 
 The contact form posts to Formspree, which forwards submissions to your email — no backend needed.
 

@@ -54,6 +54,16 @@
       color: "gold",
     },
     {
+      date: "2026-01-28", category: "news",
+      tag_en: "Promotion", tag_th: "แต่งตั้ง",
+      title_en: "Two SET lecturers promoted to Associate Professor",
+      title_th: "อาจารย์ SET สองท่านได้รับแต่งตั้งเป็นรองศาสตราจารย์",
+      description_en: "The WU Council approved the promotion of Asst. Prof. Dr. Kessara Seneesrisakul (Petrochemical & Polymer) and Asst. Prof. Dr. Siraporn Sakphrom (Electrical) to Associate Professor.",
+      description_th: "สภามหาวิทยาลัยอนุมัติแต่งตั้ง ผศ.ดร.เกศรา เสนีย์ศรีสกุล (ปิโตรเคมีและพอลิเมอร์) และ ผศ.ดร.ศิราพร ศักดิ์พรหม (ไฟฟ้า) เป็นรองศาสตราจารย์",
+      link: "https://engineer.wu.ac.th/en/blog/2026/01/28/walailak-university-council-has-approved-the-promotion-of-asst-prof-dr-kessara-seneesrisakul-to-the-academic-rank-of-associate-professor/",
+      color: "purple",
+    },
+    {
       date: "2026-02-24", category: "news",
       tag_en: "Promotion", tag_th: "แต่งตั้ง",
       title_en: "Assoc. Prof. Dr. Nattawit Wattanasakulpong approved for the rank of Professor",
