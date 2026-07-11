@@ -1,8 +1,9 @@
 /* ===========================================================
-   SET CIA — news-loader.js
+   SET International Affairs — news-loader.js
    Fetches news items from a published Google Sheet (CSV) and
    renders them into any element with [data-news-container].
-   Re-renders on language change.
+   Until the sheet is configured, the BUILTIN_ITEMS below are
+   shown instead. Re-renders on language change.
 
    ▸ Setup:
      1) In your Google Sheet, click  File → Share → Publish to web
@@ -29,15 +30,60 @@
     green:  "linear-gradient(135deg,#2e8b57,#4e9b96)",
     blue:   "linear-gradient(135deg,#5c6bc0,#7986cb)",
     cyan:   "linear-gradient(135deg,#00838f,#4dd0e1)",
-    purple: "linear-gradient(135deg,#8e24aa,#ba68c8)",
+    purple: "linear-gradient(135deg,#5b2a86,#8a5cae)",
   };
 
   /* If a row leaves "color" blank, fall back based on category. */
   const DEFAULT_COLOR_BY_CATEGORY = {
-    news:          "green",
+    news:          "purple",
     events:        "gold",
-    opportunities: "teal",
+    opportunities: "green",
   };
+
+  /* ---------- Built-in news (shown until the Google Sheet is set up) ----------
+     Same fields as the sheet columns. Newest dates appear first. */
+  const BUILTIN_ITEMS = [
+    {
+      date: "2026-05-13", category: "news",
+      tag_en: "Student Mobility", tag_th: "นักศึกษาแลกเปลี่ยน",
+      title_en: "WU and Universiti Teknologi PETRONAS conclude exchange program",
+      title_th: "มวล. และ Universiti Teknologi PETRONAS ปิดโครงการแลกเปลี่ยนอย่างสำเร็จ",
+      description_en: "The exchange with UTP (Malaysia) wrapped up with plans for deeper collaboration — including ideas sparked by our Chemical Engineering student volunteers.",
+      description_th: "โครงการแลกเปลี่ยนกับ UTP (มาเลเซีย) ปิดฉากพร้อมแผนต่อยอดความร่วมมือ รวมถึงข้อเสนอที่เกิดจากนักศึกษาอาสาสมัครวิศวกรรมเคมีของเรา",
+      link: "https://cia.wu.ac.th/walailak-university-and-universiti-teknologi-petronas-conclude-successful-international-exchange-program-paving-the-way-for-deeper-strategic-partnerships/",
+      color: "purple",
+    },
+    {
+      date: "2026-04-23", category: "events",
+      tag_en: "Summer Program", tag_th: "ภาคฤดูร้อน",
+      title_en: "SET co-hosts 10-day “Green Innovation” program for TUIT students",
+      title_th: "SET ร่วมจัดโปรแกรม “Green Innovation” 10 วัน ต้อนรับนักศึกษา TUIT",
+      description_en: "11 participants from Tashkent University of Information Technologies (Uzbekistan) joined a summer program on engineering and informatics, co-hosted by our school (14–23 April 2026).",
+      description_th: "ผู้เข้าร่วม 11 คนจาก TUIT (อุซเบกิสถาน) เข้าร่วมโปรแกรมภาคฤดูร้อนด้านวิศวกรรมและสารสนเทศ ซึ่งสำนักวิชาของเราร่วมเป็นเจ้าภาพ (14–23 เม.ย. 2026)",
+      link: "https://cia.wu.ac.th/walailak-university-welcomes-tuit-students-for-10-day-green-innovation-summer-program/",
+      color: "green",
+    },
+    {
+      date: "2026-03-25", category: "news",
+      tag_en: "New MOU", tag_th: "MOU ใหม่",
+      title_en: "WU signs MOU with Murdoch University at Investor Day 2026",
+      title_th: "มวล. ลงนาม MOU กับ Murdoch University ในงาน Investor Day 2026",
+      description_en: "A new research-collaboration MOU with Murdoch University (Australia) — a partnership our Petrochemical & Polymer Engineering group has been helping to build.",
+      description_th: "MOU ด้านความร่วมมือวิจัยกับ Murdoch University (ออสเตรเลีย) — ความร่วมมือที่กลุ่มวิศวกรรมปิโตรเคมีและพอลิเมอร์ของเรามีส่วนร่วมผลักดัน",
+      link: "https://cia.wu.ac.th/walailak-university-signs-mou-with-murdoch-university-at-walailak-investor-day-2026/",
+      color: "gold",
+    },
+    {
+      date: "2026-01-01", category: "news",
+      tag_en: "MOU Renewed", tag_th: "ต่ออายุ MOU",
+      title_en: "MOU with Universiti Tun Hussein Onn Malaysia renewed",
+      title_th: "ต่ออายุ MOU กับ Universiti Tun Hussein Onn Malaysia แล้ว",
+      description_en: "Our long-standing partnership with UTHM (Malaysia) continues — the MOU has been renewed in 2026, keeping exchange and research channels open.",
+      description_th: "ความร่วมมืออันยาวนานกับ UTHM (มาเลเซีย) เดินหน้าต่อ — ต่ออายุ MOU ในปี 2026 เปิดช่องทางแลกเปลี่ยนและวิจัยอย่างต่อเนื่อง",
+      link: "",
+      color: "purple",
+    },
+  ];
 
   /* ---------- CSV parsing (handles quoted fields with commas) ---------- */
   function parseCSV(text) {
@@ -134,7 +180,10 @@
   function fetchItems() {
     if (cachePromise) return cachePromise;
     if (!SHEET_CSV_URL || SHEET_CSV_URL.startsWith("PUT_YOUR")) {
-      cachePromise = Promise.reject(new Error("SHEET_CSV_URL is not configured in assets/js/news-loader.js"));
+      // No Google Sheet configured yet — use the built-in items.
+      const items = BUILTIN_ITEMS.slice();
+      items.sort((a, b) => parseDateMs(b.date) - parseDateMs(a.date));
+      cachePromise = Promise.resolve(items);
       return cachePromise;
     }
     cachePromise = fetch(SHEET_CSV_URL, { cache: "no-store" })

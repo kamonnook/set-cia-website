@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 830" role="img"
-     aria-label="SET global partnerships: 16 MOU and MOA agreements with 15 partner universities in 11 countries; 12 active; 8 new agreements signed in 2024 to 2025.">
+     aria-label="SET global partnerships: 16 MOU and MOA agreements with 15 partner universities in 11 countries; 13 active; 8 new agreements signed in 2024 to 2025.">
   <defs>
     <linearGradient id="purple3" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#6b3a9c"/>
@@ -58,7 +58,7 @@
     <text x="737"  y="306" text-anchor="middle" class="lab2">Countries</text>
     <text x="737"  y="330" text-anchor="middle" class="th">ประเทศ</text>
 
-    <text x="1012" y="272" text-anchor="middle" class="num2">12</text>
+    <text x="1012" y="272" text-anchor="middle" class="num2">13</text>
     <text x="1012" y="306" text-anchor="middle" class="lab2">Active agreements</text>
     <text x="1012" y="330" text-anchor="middle" class="th">ฉบับที่มีผลอยู่</text>
   </g>
@@ -86,20 +86,16 @@
   <text x="650" y="398" class="hh">By status <tspan class="th" font-size="16"> ·  สถานะ</tspan></text>
 
   <text x="650" y="451" class="reg">Active</text>
-  <rect x="830" y="430" width="240" height="30" rx="6" fill="#2e8b57"/>
-  <text x="1084" y="451" class="val">12</text>
+  <rect x="830" y="430" width="260" height="30" rx="6" fill="#2e8b57"/>
+  <text x="1104" y="451" class="val">13</text>
 
-  <text x="650" y="499" class="reg">Renewing</text>
-  <rect x="830" y="478" width="20" height="30" rx="6" fill="#d4a437"/>
+  <text x="650" y="499" class="reg">Applied (Erasmus+)</text>
+  <rect x="830" y="478" width="20" height="30" rx="6" fill="#8a5cae"/>
   <text x="864" y="499" class="val">1</text>
 
-  <text x="650" y="547" class="reg">Applied (Erasmus+)</text>
-  <rect x="830" y="526" width="20" height="30" rx="6" fill="#8a5cae"/>
-  <text x="864" y="547" class="val">1</text>
-
-  <text x="650" y="595" class="reg">Expired</text>
-  <rect x="830" y="574" width="40" height="30" rx="6" fill="#b4b2a9"/>
-  <text x="884" y="595" class="val">2</text>
+  <text x="650" y="547" class="reg">Expired</text>
+  <rect x="830" y="526" width="40" height="30" rx="6" fill="#b4b2a9"/>
+  <text x="884" y="547" class="val">2</text>
 
   <!-- momentum callout -->
   <rect x="60" y="622" width="1080" height="66" rx="12" fill="rgba(91,42,134,0.06)" stroke="rgba(91,42,134,0.20)"/>
