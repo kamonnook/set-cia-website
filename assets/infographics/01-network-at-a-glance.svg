@@ -16,7 +16,7 @@
       .ttl   { font-size: 38px; font-weight: 800; fill: #ffffff; }
       .sub   { font-size: 18px; fill: #e6d9f2; }
       .subth { font-size: 15px; fill: #cdb8e0; }
-      .badge { font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .badge { font-size: 24px; font-weight: 800; fill: #ffffff; }
       .ribbon{ font-size: 17px; fill: #5a6b78; }
       .foot  { font-size: 14px; fill: #5a6b78; }
       .footr { font-size: 14px; font-weight: 600; fill: #5b2a86; }
@@ -37,7 +37,7 @@
   </g>
   <!-- CIA badge -->
   <circle cx="95" cy="75" r="44" fill="#d4a437" stroke="#b08a25" stroke-width="2"/>
-  <text x="95" y="84" text-anchor="middle" class="badge">CIA</text>
+  <text x="95" y="84" text-anchor="middle" class="badge">SET</text>
   <!-- titles -->
   <text x="165" y="62" class="ttl">SET International — At a Glance</text>
   <text x="165" y="92" class="sub">School of Engineering &amp; Technology · Walailak University</text>
