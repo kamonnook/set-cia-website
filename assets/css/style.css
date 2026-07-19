@@ -468,6 +468,10 @@ section { padding: 80px 0; }
   background-position: right center;
   border-bottom: 1px solid var(--color-border);
 }
+.page-hero.ph-about    { --ph: url("../images/pagehero/about.jpg"); }
+.page-hero.ph-partners { --ph: url("../images/pagehero/partners.jpg"); }
+.page-hero.ph-programs { --ph: url("../images/pagehero/programs.jpg"); }
+.page-hero.ph-abstract { --ph: url("../images/pagehero/abstract-banner.svg"); }
 @media (max-width: 700px) {
   .page-hero {
     background-image:
