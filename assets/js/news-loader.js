@@ -45,7 +45,7 @@
   const BUILTIN_ITEMS = [
     {
       date: "2026-07-11", category: "opportunities",
-      tag_en: "Scholarship", tag_th: "ทุนการศึกษา",
+      tag_en: "Scholarship", tag_th: "ทุนการศึกษา", image: "iacs-2026.jpg",
       title_en: "IACS 2026: free 45-day arts & culture program in Indonesia — apply by 16 July",
       title_th: "ทุน IACS 2026 เรียนรู้ศิลปวัฒนธรรมอินโดนีเซียฟรี 45 วัน — ปิดรับ 16 ก.ค. นี้",
       description_en: "The Indonesian Government's Arts and Culture Scholarship offers Thai students a fully-funded 45-day program (3 Aug – 16 Sep 2026) with Jakarta State University. Requires passport, medical certificate, and English test result. Deadline: 16 July 2026, 23:59.",
@@ -65,7 +65,7 @@
     },
     {
       date: "2026-01-28", category: "news",
-      tag_en: "Promotion", tag_th: "แต่งตั้ง",
+      tag_en: "Promotion", tag_th: "แต่งตั้ง", image: "promotion.jpg",
       title_en: "Two SET lecturers promoted to Associate Professor",
       title_th: "อาจารย์ SET สองท่านได้รับแต่งตั้งเป็นรองศาสตราจารย์",
       description_en: "The WU Council approved the promotion of Asst. Prof. Dr. Kessara Seneesrisakul (Petrochemical & Polymer) and Asst. Prof. Dr. Siraporn Sakphrom (Electrical) to Associate Professor.",
@@ -75,7 +75,7 @@
     },
     {
       date: "2026-02-24", category: "news",
-      tag_en: "Promotion", tag_th: "แต่งตั้ง",
+      tag_en: "Promotion", tag_th: "แต่งตั้ง", image: "promotion.jpg",
       title_en: "Assoc. Prof. Dr. Nattawit Wattanasakulpong approved for the rank of Professor",
       title_th: "อนุมัติแต่งตั้ง รศ.ดร.ณัฐวิทย์ วัฒนสกุลพงศ์ ดำรงตำแหน่งศาสตราจารย์",
       description_en: "Congratulations to our Mechanical & Robotic Engineering faculty member on approval for the academic rank of Professor.",
@@ -224,11 +224,14 @@
     const readMore = lang === "th" ? "อ่านต่อ →" : "Read more →";
     const cat = (item.category || "news").toLowerCase();
 
+    const assetPrefix = location.pathname.includes("/pages/") ? "../" : "";
+    const coverInner = item.image
+      ? `<img class="cover-img" src="${assetPrefix}assets/images/news/${escapeHtml(item.image)}" alt="" loading="lazy" /><span class="tag">${escapeHtml(tag || cat)}</span>`
+      : `<span class="tag">${escapeHtml(tag || cat)}</span>${coverIcon(item)}`;
     return `
       <article class="news-card" data-news-item="${escapeHtml(cat)}">
-        <div class="cover" style="background:${resolveGradient(item)};">
-          <span class="tag">${escapeHtml(tag || cat)}</span>
-          ${coverIcon(item)}
+        <div class="cover${item.image ? " has-img" : ""}" style="background:${resolveGradient(item)};">
+          ${coverInner}
         </div>
         <div class="body">
           <div class="meta">${escapeHtml(item.date || "")}</div>
