@@ -244,9 +244,9 @@ a:hover { color: var(--color-primary-dark); }
   border-radius: var(--radius-lg);
   background-image:
     linear-gradient(165deg, rgba(67,32,95,.42) 0%, rgba(91,42,134,.10) 45%, rgba(212,164,55,.12) 100%),
-    url("../images/hero-campus.jpg");
+    url("../images/hero-set.jpg");
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 38%;
   box-shadow: var(--shadow-lg);
 }
 .hero-stats {
