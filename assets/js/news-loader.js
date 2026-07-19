@@ -183,6 +183,30 @@
     return GRADIENTS[fallbackName];
   }
 
+  /* ---------- Decorative category watermark for the card cover ---------- */
+  function coverIcon(item) {
+    const t = ((item.tag_en || "") + " " + (item.category || "")).toLowerCase();
+    const P = {
+      cap:    '<path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11.5V16c0 1.1 2.7 3 6 3s6-1.9 6-3v-4.5"/><path d="M22 9v5"/>',
+      trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a3 3 0 0 0 3 3"/><path d="M16 6h3v1a3 3 0 0 1-3 3"/><path d="M12 13v3"/><path d="M9 20h6"/><path d="M10 16h4l1 4H9z"/>',
+      plane:  '<path d="M3 14l17-7-6 16-3.5-6.5L3 14z"/>',
+      sun:    '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/>',
+      doc:    '<path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10 12h6M10 16h6"/>',
+      badge:  '<circle cx="12" cy="9" r="5"/><path d="M8.5 13l-1 8 4.5-2.2L16.5 21l-1-8"/>',
+      globe:  '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>'
+    };
+    let k = "globe";
+    if (/scholar/.test(t)) k = "cap";
+    else if (/award/.test(t)) k = "trophy";
+    else if (/mobility|exchange/.test(t)) k = "plane";
+    else if (/summer|event|program/.test(t)) k = "sun";
+    else if (/mou|partner|renew/.test(t)) k = "doc";
+    else if (/promotion|appoint/.test(t)) k = "badge";
+    else if ((item.category || "") === "opportunities") k = "cap";
+    else if ((item.category || "") === "events") k = "sun";
+    return '<div class="cover-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">' + P[k] + '</svg></div>';
+  }
+
   function escapeHtml(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -204,6 +228,7 @@
       <article class="news-card" data-news-item="${escapeHtml(cat)}">
         <div class="cover" style="background:${resolveGradient(item)};">
           <span class="tag">${escapeHtml(tag || cat)}</span>
+          ${coverIcon(item)}
         </div>
         <div class="body">
           <div class="meta">${escapeHtml(item.date || "")}</div>
