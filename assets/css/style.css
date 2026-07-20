@@ -199,7 +199,10 @@ a:hover { color: var(--color-primary-dark); }
 /* ----------------------- Hero ----------------------- */
 .hero {
   position: relative;
-  padding: 112px 0 104px;
+  min-height: calc(100vh - var(--header-h));
+  display: flex;
+  align-items: center;
+  padding: 56px 0;
   color: #fff;
   background:
     radial-gradient(760px 520px at 88% 8%, rgba(212,164,55,.26), transparent 62%),
@@ -207,6 +210,7 @@ a:hover { color: var(--color-primary-dark); }
     linear-gradient(135deg, #38184f 0%, #5b2a86 58%, #6d3ba0 100%);
   overflow: hidden;
 }
+.hero > .container { position: relative; z-index: 1; width: 100%; }
 .hero::after {
   content: "";
   position: absolute; right: -160px; top: -160px;
@@ -493,23 +497,34 @@ section { padding: 80px 0; }
 
 /* ----------------------- Page header (subpages) ----------------------- */
 .page-hero {
-  padding: 64px 0 48px;
-  background-color: var(--color-surface);
+  position: relative;
+  padding: 84px 0 68px;
+  color: #fff;
+  background-color: #38184f;
   background-image:
-    linear-gradient(90deg, #f7f6fb 0%, rgba(247,246,251,.96) 40%, rgba(247,246,251,.70) 62%, rgba(247,246,251,.25) 100%),
-    var(--ph, radial-gradient(800px 300px at 10% 10%, rgba(91,42,134,.10), transparent 60%));
+    linear-gradient(100deg, #38184f 0%, rgba(56,24,79,.95) 38%, rgba(91,42,134,.66) 64%, rgba(91,42,134,.26) 100%),
+    var(--ph, radial-gradient(620px 320px at 90% 18%, rgba(212,164,55,.20), transparent 62%));
   background-size: cover;
   background-position: right center;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  overflow: hidden;
 }
+.page-hero::after {
+  content: "";
+  position: absolute; right: -120px; top: -150px;
+  width: 440px; height: 440px; border-radius: 50%;
+  border: 1.5px solid rgba(212,164,55,.15);
+  pointer-events: none;
+}
+.page-hero .container { position: relative; z-index: 1; }
 .page-hero.ph-about    { --ph: url("../images/pagehero/about.jpg"); }
 .page-hero.ph-partners { --ph: url("../images/pagehero/partners.jpg"); }
 .page-hero.ph-programs { --ph: url("../images/pagehero/programs.jpg"); }
-.page-hero.ph-abstract { --ph: url("../images/pagehero/abstract-banner.svg"); }
+.page-hero.ph-abstract { --ph: radial-gradient(620px 320px at 88% 18%, rgba(212,164,55,.24), transparent 62%); }
 @media (max-width: 700px) {
   .page-hero {
     background-image:
-      linear-gradient(90deg, rgba(247,246,251,.97) 0%, rgba(247,246,251,.88) 100%),
+      linear-gradient(100deg, rgba(56,24,79,.97) 0%, rgba(56,24,79,.9) 100%),
       var(--ph, none);
   }
 }
@@ -517,20 +532,21 @@ section { padding: 80px 0; }
   margin: 0 0 10px;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   letter-spacing: -.4px;
+  color: #fff;
 }
 .page-hero p {
   margin: 0;
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,.84);
   font-size: 1.05rem;
   max-width: 720px;
 }
 .breadcrumb {
   font-size: .85rem;
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,.72);
   margin-bottom: 14px;
 }
-.breadcrumb a { color: var(--color-text-muted); }
-.breadcrumb a:hover { color: var(--color-primary-dark); }
+.breadcrumb a { color: rgba(255,255,255,.82); }
+.breadcrumb a:hover { color: #fff; }
 
 /* ----------------------- Forms ----------------------- */
 .form-card {
@@ -631,7 +647,7 @@ section { padding: 80px 0; }
 
 /* ----------------------- Responsive ----------------------- */
 @media (max-width: 900px) {
-  .hero { padding: 64px 0 64px; }
+  .hero { min-height: auto; padding: 56px 0; }
   .hero-grid { grid-template-columns: 1fr; gap: 36px; }
   .hero-visual { order: -1; aspect-ratio: 16/10; }
   .hero-stats { position: static; margin-top: 24px; }
