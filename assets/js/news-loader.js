@@ -25,18 +25,20 @@
   /* Colour presets — use these names in the "color" column of the sheet.
      You can also put a custom pair of hex colours like  #123456,#789abc  */
   const GRADIENTS = {
-    teal:   "linear-gradient(135deg,#006a64,#4e9b96)",
-    gold:   "linear-gradient(135deg,#d4a437,#b08a25)",
+    maroon: "linear-gradient(135deg,#7a1c2a,#a8515f)",
+    orange: "linear-gradient(135deg,#d0691c,#e08a3a)",
+    purple: "linear-gradient(135deg,#5b2a86,#8a5cae)",
     green:  "linear-gradient(135deg,#2e8b57,#4e9b96)",
+    gold:   "linear-gradient(135deg,#d0691c,#e08a3a)",
+    teal:   "linear-gradient(135deg,#7a1c2a,#a8515f)",
     blue:   "linear-gradient(135deg,#5c6bc0,#7986cb)",
     cyan:   "linear-gradient(135deg,#00838f,#4dd0e1)",
-    purple: "linear-gradient(135deg,#5b2a86,#8a5cae)",
   };
 
   /* If a row leaves "color" blank, fall back based on category. */
   const DEFAULT_COLOR_BY_CATEGORY = {
-    news:          "purple",
-    events:        "gold",
+    news:          "maroon",
+    events:        "orange",
     opportunities: "green",
   };
 

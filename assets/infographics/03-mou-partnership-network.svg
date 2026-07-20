@@ -2,28 +2,28 @@
      aria-label="SET global partnerships: 16 MOU and MOA agreements with 15 partner universities in 11 countries; 13 active; 8 new agreements signed in 2024 to 2025.">
   <defs>
     <linearGradient id="purple3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6b3a9c"/>
-      <stop offset="1" stop-color="#43205f"/>
+      <stop offset="0" stop-color="#93233a"/>
+      <stop offset="1" stop-color="#54101a"/>
     </linearGradient>
     <style>
       text { font-family: "Inter","Segoe UI","Helvetica Neue",Arial,"Sukhumvit Set","Sarabun",Tahoma,sans-serif; }
-      .num2{font-size:52px;font-weight:800;fill:#d4a437}
-      .lab2{font-size:18px;font-weight:700;fill:#5b2a86}
+      .num2{font-size:52px;font-weight:800;fill:#d0691c}
+      .lab2{font-size:18px;font-weight:700;fill:#7a1c2a}
       .th{font-size:14px;fill:#5a6b78}
       .hh{font-size:23px;font-weight:700;fill:#1a2530}
       .reg{font-size:16px;font-weight:600;fill:#1a2530}
-      .val{font-size:18px;font-weight:700;fill:#5b2a86}
-      .hv{font-size:52px;font-weight:800;fill:#d4a437}
+      .val{font-size:18px;font-weight:700;fill:#7a1c2a}
+      .hv{font-size:52px;font-weight:800;fill:#d0691c}
       .hl{font-size:17px;font-weight:600;fill:#1a2530}
       .hls{font-size:15px;fill:#5a6b78}
       .ttl{font-size:37px;font-weight:800;fill:#fff}
-      .sub{font-size:17px;fill:#e6d9f2}
-      .subth{font-size:14px;fill:#cdb8e0}
+      .sub{font-size:17px;fill:#f2dde1}
+      .subth{font-size:14px;fill:#ddb9c1}
       .badge{font-size:24px;font-weight:800;fill:#fff}
       .pill{font-size:15px;font-weight:600;fill:#fff}
       .ribbon{font-size:16px;fill:#5a6b78}
       .foot{font-size:13px;fill:#5a6b78}
-      .footr{font-size:13px;font-weight:600;fill:#5b2a86}
+      .footr{font-size:13px;font-weight:600;fill:#7a1c2a}
     </style>
   </defs>
 
@@ -31,12 +31,12 @@
 
   <!-- header -->
   <rect width="1200" height="150" fill="url(#purple3)"/>
-  <circle cx="95" cy="75" r="44" fill="#d4a437" stroke="#b08a25" stroke-width="2"/>
+  <circle cx="95" cy="75" r="44" fill="#d0691c" stroke="#a8500f" stroke-width="2"/>
   <text x="95" y="83" text-anchor="middle" class="badge">SET</text>
   <text x="165" y="60" class="ttl">SET Global Partnerships — MOU / MOA</text>
   <text x="165" y="90" class="sub">School of Engineering &amp; Technology · Walailak University</text>
   <text x="165" y="114" class="subth">เครือข่ายความร่วมมือ MOU / MOA · สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี</text>
-  <rect x="905" y="46" width="235" height="36" rx="18" fill="rgba(255,255,255,0.14)" stroke="#d4a437" stroke-width="1.5"/>
+  <rect x="905" y="46" width="235" height="36" rx="18" fill="rgba(255,255,255,0.14)" stroke="#d0691c" stroke-width="1.5"/>
   <text x="1022" y="70" text-anchor="middle" class="pill">Register · 2015 – 2025</text>
 
   <!-- stat tiles -->
@@ -67,19 +67,19 @@
   <text x="60" y="398" class="hh">By region <tspan class="th" font-size="16"> ·  ตามภูมิภาค</tspan></text>
 
   <text x="60" y="451" class="reg">East Asia</text>
-  <rect x="250" y="430" width="330" height="30" rx="6" fill="#d4a437"/>
+  <rect x="250" y="430" width="330" height="30" rx="6" fill="#d0691c"/>
   <text x="594" y="451" class="val">6</text>
 
   <text x="60" y="499" class="reg">Europe</text>
-  <rect x="250" y="478" width="330" height="30" rx="6" fill="#d4a437"/>
+  <rect x="250" y="478" width="330" height="30" rx="6" fill="#d0691c"/>
   <text x="594" y="499" class="val">6</text>
 
   <text x="60" y="547" class="reg">Southeast Asia</text>
-  <rect x="250" y="526" width="165" height="30" rx="6" fill="#5b2a86"/>
+  <rect x="250" y="526" width="165" height="30" rx="6" fill="#7a1c2a"/>
   <text x="429" y="547" class="val">3</text>
 
   <text x="60" y="595" class="reg">South Asia</text>
-  <rect x="250" y="574" width="55" height="30" rx="6" fill="#5b2a86"/>
+  <rect x="250" y="574" width="55" height="30" rx="6" fill="#7a1c2a"/>
   <text x="319" y="595" class="val">1</text>
 
   <!-- right: by status -->
@@ -90,7 +90,7 @@
   <text x="1104" y="451" class="val">13</text>
 
   <text x="650" y="499" class="reg">Applied (Erasmus+)</text>
-  <rect x="830" y="478" width="20" height="30" rx="6" fill="#8a5cae"/>
+  <rect x="830" y="478" width="20" height="30" rx="6" fill="#a8515f"/>
   <text x="864" y="499" class="val">1</text>
 
   <text x="650" y="547" class="reg">Expired</text>
@@ -98,7 +98,7 @@
   <text x="884" y="547" class="val">2</text>
 
   <!-- momentum callout -->
-  <rect x="60" y="622" width="1080" height="66" rx="12" fill="rgba(91,42,134,0.06)" stroke="rgba(91,42,134,0.20)"/>
+  <rect x="60" y="622" width="1080" height="66" rx="12" fill="rgba(122,28,42,0.06)" stroke="rgba(122,28,42,0.20)"/>
   <text x="95" y="668" class="hv">8</text>
   <text x="145" y="652" class="hl">new agreements signed in 2024 – 2025 — the network's fastest growth yet</text>
   <text x="145" y="678" class="hls">ข้อตกลงใหม่ที่ลงนามช่วงปี 2024–2025 · จาก Erasmus+ ในยุโรป ถึงหลักสูตรปริญญาคู่กับจีน</text>

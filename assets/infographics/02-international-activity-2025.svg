@@ -2,26 +2,26 @@
      aria-label="SET international activity, October 2024 to September 2025: 30+ activities, 14 partner universities, 10 countries, 5 programs in development.">
   <defs>
     <linearGradient id="teal2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6b3a9c"/>
-      <stop offset="1" stop-color="#43205f"/>
+      <stop offset="0" stop-color="#93233a"/>
+      <stop offset="1" stop-color="#54101a"/>
     </linearGradient>
     <style>
       text { font-family: "Inter","Segoe UI","Helvetica Neue",Arial,"Sukhumvit Set","Sarabun",Tahoma,sans-serif; }
-      .num2{font-size:52px;font-weight:800;fill:#d4a437}
-      .lab2{font-size:18px;font-weight:700;fill:#5b2a86}
+      .num2{font-size:52px;font-weight:800;fill:#d0691c}
+      .lab2{font-size:18px;font-weight:700;fill:#7a1c2a}
       .th{font-size:14px;fill:#5a6b78}
       .hh{font-size:23px;font-weight:700;fill:#1a2530}
-      .hv{font-size:40px;font-weight:800;fill:#d4a437}
+      .hv{font-size:40px;font-weight:800;fill:#d0691c}
       .hl{font-size:17px;font-weight:600;fill:#1a2530}
       .hls{font-size:15px;fill:#5a6b78}
       .ttl{font-size:37px;font-weight:800;fill:#fff}
-      .sub{font-size:17px;fill:#e6d9f2}
-      .subth{font-size:14px;fill:#cdb8e0}
+      .sub{font-size:17px;fill:#f2dde1}
+      .subth{font-size:14px;fill:#ddb9c1}
       .badge{font-size:24px;font-weight:800;fill:#fff}
       .pill{font-size:15px;font-weight:600;fill:#fff}
       .ribbon{font-size:16px;fill:#5a6b78}
       .foot{font-size:13px;fill:#5a6b78}
-      .footr{font-size:13px;font-weight:600;fill:#5b2a86}
+      .footr{font-size:13px;font-weight:600;fill:#7a1c2a}
     </style>
   </defs>
 
@@ -29,12 +29,12 @@
 
   <!-- header -->
   <rect width="1200" height="150" fill="url(#teal2)"/>
-  <circle cx="95" cy="75" r="44" fill="#d4a437" stroke="#b08a25" stroke-width="2"/>
+  <circle cx="95" cy="75" r="44" fill="#d0691c" stroke="#a8500f" stroke-width="2"/>
   <text x="95" y="84" text-anchor="middle" class="badge">SET</text>
   <text x="165" y="60" class="ttl">SET International Activity — 2025</text>
   <text x="165" y="90" class="sub">School of Engineering &amp; Technology · Walailak University</text>
   <text x="165" y="114" class="subth">สรุปกิจกรรมนานาชาติ · สำนักวิชาวิศวกรรมศาสตร์และเทคโนโลยี</text>
-  <rect x="905" y="46" width="235" height="36" rx="18" fill="rgba(255,255,255,0.14)" stroke="#d4a437" stroke-width="1.5"/>
+  <rect x="905" y="46" width="235" height="36" rx="18" fill="rgba(255,255,255,0.14)" stroke="#d0691c" stroke-width="1.5"/>
   <text x="1022" y="70" text-anchor="middle" class="pill">Oct 2024 – Sep 2025</text>
 
   <!-- stat tiles -->
